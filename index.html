@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grokbot dataset</title>
+  <link rel="icon" href="identity/icon-64-IP-001.png">
+  <link rel="stylesheet" href="site.css">
+</head>
+<body>
+  <a class="skip" href="#catalog">Skip to catalog</a>
+  <header class="top">
+    <div class="wrap">
+      <a class="brand" href="#/" aria-label="Grokbot dataset home">
+        <img src="identity/instructplus-lockup-horizontal-light.svg" alt="Instruct+">
+      </a>
+      <p class="tag">Local catalog</p>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="wrap">
+      <h1>Grokbot dataset</h1>
+      <p class="lede">Catalog of <code>grokbot-posts-2026-10-27.zip</code>. One entry for every JSONL record, and one entry for every other file. Directory entries are left out.</p>
+      <div class="hero-actions">
+        <div class="figures">
+          <div>
+            <p class="figure" id="catalog-count" aria-labelledby="catalog-count-label">—</p>
+            <p class="label" id="catalog-count-label">Catalog entries</p>
+          </div>
+          <div>
+            <p class="figure" id="jsonl-count" aria-labelledby="jsonl-count-label">—</p>
+            <p class="label" id="jsonl-count-label">JSONL records</p>
+          </div>
+        </div>
+        <a class="ipb-btn-primary" href="#catalog">Browse the catalog</a>
+      </div>
+      <ul class="roster" aria-label="Role family marks from pixel-smith">
+        <li>
+          <div class="node">
+            <span class="mark"><img src="identity/mark-IP-007.png" width="32" height="32" alt=""></span>
+            <b>Lead</b>
+          </div>
+        </li>
+        <li>
+          <div class="node">
+            <span class="mark"><img src="identity/mark-IP-003.png" width="32" height="32" alt=""></span>
+            <b>Strategy</b>
+          </div>
+        </li>
+        <li>
+          <div class="node">
+            <span class="mark"><img src="identity/mark-IP-008.png" width="32" height="32" alt=""></span>
+            <b>Writer</b>
+          </div>
+        </li>
+        <li>
+          <div class="node">
+            <span class="mark"><img src="identity/icon-256-IP-001.png" width="32" height="32" alt=""></span>
+            <b>Code</b>
+          </div>
+        </li>
+        <li>
+          <div class="node">
+            <span class="mark"><img src="identity/mark-IP-004.png" width="32" height="32" alt=""></span>
+            <b>Design</b>
+          </div>
+        </li>
+        <li>
+          <div class="node">
+            <span class="mark"><img src="identity/mark-IP-002.png" width="32" height="32" alt=""></span>
+            <b>Video</b>
+          </div>
+        </li>
+        <li>
+          <div class="node">
+            <span class="mark"><img src="identity/mark-IP-039.png" width="32" height="32" alt=""></span>
+            <b>Reviewer</b>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="sec" id="catalog">
+    <div class="wrap">
+      <p class="label">Catalog</p>
+      <h2>Find a record.</h2>
+      <form id="filters" role="search">
+        <label class="search-label" for="q">Search
+          <input id="q" type="search" placeholder="Name, path, description, or any field" autocomplete="off">
+        </label>
+        <div class="filter-row">
+          <label>Type
+            <select id="ext"></select>
+          </label>
+          <label>Place
+            <select id="scope"></select>
+          </label>
+          <label>Source
+            <select id="area"></select>
+          </label>
+        </div>
+      </form>
+      <p id="result-meta" class="meta" aria-live="polite"></p>
+      <div id="list"></div>
+      <nav id="pager" aria-label="Pages"></nav>
+    </div>
+  </section>
+
+  <article id="detail" hidden>
+    <div class="wrap">
+      <div id="detail-frame" class="frame"></div>
+    </div>
+  </article>
+
+  <footer class="foot">
+    <div class="wrap foot-brand">
+      <a class="brand" href="#/" aria-label="Grokbot dataset home">
+        <img src="identity/instructplus-lockup-horizontal-light.svg" alt="Instruct+">
+      </a>
+      <img class="qr" src="identity/IP-001.png" width="112" height="112" alt="IP-001 brand QR. Rounded ink modules on cream, with the pixel face in the center.">
+    </div>
+    <div class="wrap">
+      <p class="meta" id="count-rule">Counting method: one catalog entry per non-empty line in every <code>.jsonl</code> file inside <code>grokbot-posts-2026-10-27.zip</code>, plus one entry per other non-directory file. Directory members are not entries. Nested objects and arrays stay on that record and are listed in full on the detail view. The catalog figure is <code>window.GROK_CATALOG.length</code>.</p>
+      <p class="meta">Chrome follows instruct.zip: Inter, ink <code>#15130F</code>, white, grey hairlines, coral <code>#C8462A</code> on the logo plus and the browse button. Marks: <code>identity/icon-256-IP-001.png</code>, <code>identity/mark-IP-002.png</code>, <code>identity/mark-IP-003.png</code>, <code>identity/mark-IP-004.png</code>, <code>identity/mark-IP-007.png</code>, <code>identity/mark-IP-008.png</code>, <code>identity/mark-IP-039.png</code>, and <code>identity/IP-001.png</code>.</p>
+    </div>
+  </footer>
+  <noscript><p class="noscript">This catalog needs JavaScript to read catalog.js.</p></noscript>
+  <script src="catalog.js" charset="utf-8"></script>
+  <script src="app.js" charset="utf-8"></script>
+</body>
+</html>

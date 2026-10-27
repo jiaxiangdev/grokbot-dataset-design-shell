@@ -1,0 +1,5 @@
+# The posts dataset stays out of this shell.
+*.zip
+node_modules/
+outputs/
+site-preview/
